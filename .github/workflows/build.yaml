@@ -63,7 +63,7 @@ jobs:
       - name: "Upload Artifact"
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
-          path: "build/libs/slf4md.jar"
+          path: "build/libs/poly.jar"
           archive: false
           if-no-files-found: error
 
@@ -80,7 +80,7 @@ jobs:
         if: ${{ github.event_name == 'release' }}
         uses: softprops/action-gh-release@b4309332981a82ec1c5618f44dd2e27cc8bfbfda # v3
         with:
-          files: "build/libs/slf4md.jar"
+          files: "build/libs/poly.jar"
 
       - name: "Update Changelog"
         if: ${{ github.event_name == 'release' }}
@@ -91,7 +91,7 @@ jobs:
 
       - name: "Bump Version"
         if: ${{ github.event_name == 'release' }}
-        run: .xpdustry-ci/scripts/version-bump.sh "mod.json" "${{ steps.version.outputs.version }}"
+        run: .xpdustry-ci/scripts/version-bump.sh "build.gradle.kts" "${{ steps.version.outputs.version }}"
 
       - name: "Commit Release Changes"
         if: ${{ github.event_name == 'release' }}
