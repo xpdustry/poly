@@ -7,6 +7,7 @@
 ## Description
 
 Redirect players.
+POC for a global event server redirector.
 
 ## Installation
 
