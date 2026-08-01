@@ -61,7 +61,7 @@ dependencies {
     compileOnly(toxopid.dependencies.arcCore)
     compileOnly("org.slf4j:slf4j-api:2.0.18")
     implementation(kotlin("stdlib-jdk8"))
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.11.0")
     implementation("dev.kord:kord-core:0.18.1")
 }
