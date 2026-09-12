@@ -6,11 +6,11 @@ import com.xpdustry.toxopid.task.GithubAssetDownload
 import com.xpdustry.toxopid.task.MindustryExec
 
 plugins {
-    id("com.diffplug.spotless") version "8.5.1"
-    id("net.kyori.indra") version "4.0.0"
-    kotlin("jvm") version "2.3.21"
-    kotlin("plugin.serialization") version "2.3.21"
-    id("com.gradleup.shadow") version "9.4.1"
+    id("com.diffplug.spotless") version "8.10.2"
+    id("net.kyori.indra") version "4.1.0"
+    kotlin("jvm") version "2.4.20"
+    kotlin("plugin.serialization") version "2.4.20"
+    id("com.gradleup.shadow") version "9.6.1"
     id("com.xpdustry.toxopid") version "4.2.0"
 }
 
